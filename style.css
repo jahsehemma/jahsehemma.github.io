@@ -3,29 +3,29 @@
 }
 
 body {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 10vw;
+    margin-right: 10vw;
     background-color: #12163a;
 }
 
 .main {
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     background-color: floralwhite;
 }
 
 .nav {
+    position: relative;
     background-color:#12163a;
-    margin-bottom: 2.95%;
-    margin-top: 2.95%;
-    align-items: center;
+    margin-bottom: 4.95vh;
+    margin-top: 4.95vh;
 }
 
 .nav ul {
-    padding: 1em 0rem;
+    justify-content: center;
+    padding: 0vw 0vw;
     display: flex;
     list-style: none;
-    justify-content: center;
 }
 
 .nav ul li a{
@@ -34,14 +34,14 @@ body {
     color: whitesmoke;
     padding-top: 0.45em;
     font-size: 1.45rem;
-    margin: 0.45em;
+    margin: 0.75vw;
     text-decoration: none;
     position: relative;
     transition: all ease-in-out 200ms;
 }
 
 .nav ul li a:hover{
-    color: whitesmoke;
+    color: white;
 }
 
 .nav ul li a::before {
@@ -99,39 +99,21 @@ p {
     font-size: 1.25rem;
     font-family:'Courier New', Courier, monospace;
     color: rgb(27, 2, 2);
-    position: relative;
 }
 
 .btn {
     font-size: 1.15rem;
     text-decoration: none;
-    color:darkblue;
+    color: whitesmoke;;
     font-family: monospace;
     margin: 0rem;
-    padding: 0.45em 1.15em;
-    border: solid brown;
+    padding: 0.55em 1.15em;
     border-radius: 0.40em;
-}
-
-.button {
     margin: 1.95em;
-    position: absolute;
-    transition: ease-in-out 250ms;
+    background-color: brown;
+    transition: ease-in-out 75ms;
 }
 
-.button::after {
-    content: "";
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    position: absolute;
-    left: 0;
-    bottom: -7.5px;
-    border-bottom-left-radius: 0.40em;
-    border-bottom-right-radius: 0.40em;
-}
-
-.button:hover {
-    box-shadow: 5px black;
-    transform: translateY(-0.25em);
+.btn:hover {
+    background-color: rgb(122, 21, 21);
 }
